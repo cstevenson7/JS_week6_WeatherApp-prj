@@ -2,7 +2,7 @@ function getJson(){
     //get the city form form user input
     let city = document.querySelector("#city").value;
     //link to the api with the city in the url
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=72fed5dd48ff06dcf670a1689cf0dc55`)
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=API_KEY_HERE`)
     //callback function with promise
     .then(response => response.json())
     .then(rawData => {
